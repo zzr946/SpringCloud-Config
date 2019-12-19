@@ -8,7 +8,6 @@ spring:
     encoding: UTF-8
     servlet:
       content-type: text/html
-
 server:
   port: 8765 #测试环境，端口为8765
 #Eureka设置
@@ -16,7 +15,6 @@ eureka:
   client:
     service-url:
       default-zone: http://localhost:8761/eureka/
-
 feign:
   hystrix:
     enabled: true #开启熔断器
