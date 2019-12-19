@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-cloud-feign #\u670D\u52A1\u53D1\u73B0\u8005\u7684\u540D\u5B57
+  #\u6A21\u677F\u5F15\u64CE\u7684\u914D\u7F6E
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+
+server:
+  port: 8765 #\u7AEF\u53E3\u4E3A8765
+#Eureka\u8BBE\u7F6E
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+
+feign:
+  hystrix:
+    enabled: true #\u5F00\u542F\u7194\u65AD\u5668
