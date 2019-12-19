@@ -10,7 +10,7 @@ spring:
       content-type: text/html
 
 server:
-  port: 8765 #测试环境，端口为8765
+  port: 8766 #生产环境，端口为8766
 #Eureka设置
 eureka:
   client:
